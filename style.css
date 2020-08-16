@@ -29,11 +29,12 @@ body {
 .card {
   position: relative;
   background-color: white;
+  display: none;
   padding: 20px;
   margin-top: 20px;
 }
 
-.slideToggle {
+.btn {
   background-color: #f9f5f5;
   color: black;
   border: 2px solid #a9b5a9;

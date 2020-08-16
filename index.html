@@ -32,7 +32,8 @@
 
     <div class="row">
       <div class="leftcolumn">
-        <button class="slideToggle">slideToggle</button>
+        <button class="btn slideToggle">slideToggle</button>
+        <button class="btn slideToggle2">slideToggle</button>
         <div class="card elementClass">
           <h2>FIRST TITLE HEADING</h2>
           <h5>
@@ -52,7 +53,7 @@
             exercitation ullamco.
           </p>
         </div>
-        <div class="card">
+        <div class="card elementClass2">
           <h2>SECOND TITLE HEADING</h2>
           <h5>
             Title description,
@@ -80,5 +81,30 @@
 
     <!--Scripts JS-->
     <script src="./main.js"></script>
+    <script>
+      let btn = document.querySelector('.slideToggle');
+
+      btn.addEventListener('click', (e) => {
+        let el = document.querySelector('.elementClass');
+        let el2 = document.querySelector('.elementClass2');
+
+        e.preventDefault();
+        el2.setAttribute('style', 'display:none');
+        slideToggle(el);
+      });
+    </script>
+
+    <script>
+      let btn2 = document.querySelector('.slideToggle2');
+
+      btn2.addEventListener('click', (e) => {
+        let el = document.querySelector('.elementClass2');
+        let el2 = document.querySelector('.elementClass');
+
+        e.preventDefault();
+        el2.setAttribute('style', 'display:none');
+        slideToggle(el);
+      });
+    </script>
   </body>
 </html>

@@ -94,17 +94,3 @@ const slideToggle = (element, duration = 500) => {
         return slideUp(element, duration);
     }
 }
-
-
-
-let btn = document.querySelector('.slideToggle')
-
-
-btn.addEventListener('click', e => {
-
-    let el = document.querySelector('.elementClass')
-
-    e.preventDefault();
-
-    slideToggle(el);
-});
